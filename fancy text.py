@@ -1,6 +1,6 @@
 #ask for name 
 
-name = input("Good day! What is your name? ")
+name = input("\033[1;36;40mGood day! What is your name? ")
 print("Hi, " + name + " You look great today!")
 
 #ask for dream job
@@ -18,5 +18,7 @@ if job:
     print("That's an amzaing job! " + name)
 
 #use fancy text
-
+import pyfiglet
+fancy_text = pyfiglet.figlet_format("Padayon! Our Future " + job + "!", font="slant")
+print(fancy_text)
 
